@@ -80,7 +80,7 @@ body {
   }
   /* establishes a white background */
   .main-bkgd {
-    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    background: #ffffff url(media/gulp-bottom-beans.jpg) repeat-x bottom;
     padding-bottom: 300px;
   }
   /* sits inside of the white background, centered */
@@ -89,6 +89,12 @@ body {
     margin: 0 auto;
     padding: 2rem;
     display: grid;
+    grid-template-columns: 0.75fr auto;
+    border: 1px solid red;
+  }
+
+  .home-copy {
+    padding-right: 2rem;
   }
   article {
     flex-basis: 30%;
@@ -107,6 +113,7 @@ body {
     color: #f2f2f2;
     padding: 0.5rem;
   }
+
   .button {
     display: inline-block;
     background-color: #59331D;
@@ -117,13 +124,12 @@ body {
     text-decoration: none;
     border: 3px solid #59331d;
   }
-  .button a {
-      color: #f2f2f2;
-  }
+
   .button:hover {
     background-color: #f2f2f2;
     color: #59331d;
   }
+
   footer {
     color: #f2f2f2;
     text-align: center;
@@ -171,36 +177,49 @@ img.rounded-corner {
 /*about styles */
 .about-container {
   /*border: 5px dotted red;*/
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    display: grid;
-    /*flex-flow: row wrap;*/
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 0.5fr auto;
+  justify-content: space-around;
+  grid-column-gap: 1rem;
 }
 
-.about-copy a {
+.about-p {
+    /*border:2px solid green;*/
+}
+
+.about-copy {
+    /*border:5px double pink;*/
+    grid-column: 1;
+}
+
+.about-p a {
   color: #D98555;
+  /*border: 2px solid blue;*/
 }
 
-.about-container a:hover {
+.about-p a:hover {
   text-decoration:none;
 }
-/*.about-fig img {
-    width: 250px;
-  }*/
-  .about-fig {
+
+.about-fig {
     text-align:center;
     max-width:250px;
-    margin:auto;
+    /*border: 2px dotted red;*/
   }
-
 
 @media only screen and (min-width: 768px) {
   .product-container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0.5rem;
+  }
+  .about-container {
+   /*grid-template-columns: 1fr;*/
+  }
+  nav {
+      flex-direction: column;
   }
 }
 
