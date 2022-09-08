@@ -90,7 +90,7 @@ body {
     padding: 2rem;
     display: grid;
     grid-template-columns: 0.75fr auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
   }
 
   .home-copy {
