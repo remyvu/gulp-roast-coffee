@@ -89,13 +89,21 @@ body {
     margin: 0 auto;
     padding: 2rem;
     display: grid;
-    grid-template-columns: 0.75fr auto;
     /*border: 1px solid red;*/
   }
 
   .home-copy {
     padding-right: 2rem;
   }
+
+  .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 0.75fr auto;
+  }
+
   article {
     flex-basis: 30%;
   }
@@ -181,7 +189,7 @@ img.rounded-corner {
   margin: 0 auto;
   padding-top: 2rem;
   display: grid;
-  grid-template-columns: 0.5fr auto;
+  grid-template-columns: auto;
   justify-content: space-around;
   grid-column-gap: 1rem;
 }
@@ -210,13 +218,36 @@ img.rounded-corner {
     /*border: 2px dotted red;*/
   }
 
+/*contact styles */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    /*border: 5px double green;*/
+}
+
+.contact-copy {
+    /*border: 1px solid red;*/
+}
+
+.contact-img {
+    /*border: 10px solid blue;*/
+    margin: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .product-container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0.5rem;
   }
   .about-container {
-   /*grid-template-columns: 1fr;*/
+   grid-template-columns: 0.5fr auto;
+  }
+  .contact-container {
+    grid-template-columns: auto auto;
   }
   nav {
       flex-direction: column;
