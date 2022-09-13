@@ -1,0 +1,8 @@
+@function check-color ($color) {
+    @if (lightness($color) > 50%) {
+      @return #131D26;
+      } @else {
+      @return #f2f2f2;
+      }
+    }
+  

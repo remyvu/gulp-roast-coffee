@@ -1,0 +1,15 @@
+@media only screen and (min-width: 768px) {
+    .product-container {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 0.5rem;
+    }
+    .about-container {
+     grid-template-columns: 0.5fr auto;
+    }
+    .contact-container {
+      grid-template-columns: auto auto;
+    }
+    nav {
+        flex-direction: column;
+    }
+  }
