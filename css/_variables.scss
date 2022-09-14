@@ -9,6 +9,8 @@ $header-size: calc(2 * $body-size);
 $body-line-height: 2;
 
 /* color variables*/
-$background-color: #F2F2F2;
-$button-bg-color: #59331D;
-
+$primary-color: #F2F2F2; /* white */
+$button-bg-color: #59331D; /* coffee */
+$accent-color-dark: #131D26; /* navy blue */
+$accent-color-light: #082B59; /* bright blue */
+$accent-color-bright: #D98555; /*peach */
